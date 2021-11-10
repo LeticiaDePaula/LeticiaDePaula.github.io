@@ -7,37 +7,88 @@
     <title>Leticia's Portfolio</title>
     <style>
 
+        * {
+            margin: 0;
+        }
+        
+        body {
+            background-color: rgb(206, 216, 214);
+        }
+
+        main {
+            margin-left: 12%;
+            margin-right: 12%;
+            margin-top: 6.25%;
+            background-color: rgb(222, 222, 222);
+        }
+        
+        #me {
+            background-color: rgb(31, 31, 31);
+            padding-bottom: 5%;
+        }
+
+        h3 {
+            background-color: rgb(31, 31, 31);
+            color: white;
+            padding: 1%;
+        }
+
+        #foto {
+            width: 33%;
+            float: left;
+            border-bottom-right-radius: 75%;
+        }
+
+        #nome {
+            float: right;
+            color: white;
+            margin-right: 10%;
+            margin-top: 10%;
+        }
+
+        #indice {
+            text-align: right;
+            margin-right: 10%;
+            margin-left: 50%;
+        }
+
     </style>
 </head>
 <body>
-    <a href="#foto">Foto</a><br>
-    <a href="#sobre">Sobre mim</a><br>
-    <a href="#hab">Habilidades</a><br>
-    <h1>Leticia de Paula</h1>
-    <img src="foto.jpg" width="370" alt="Foto atual de Leticia" id="foto">
-    <section id="sobre">
-        <h3>Sobre mim:</h3>
-        <article>
-            <p>Brasileira, morando em <b>Joinville</b>, <em>Santa Catarina</em>. Estudante de <em>Desenvolvimento Web</em> na <strong>Trybe</strong> e <em>Desenvolvimento Full Stack</em> no <strong>Senai</strong>. Apaixonada por tecnologia, desenvolvimento e aprendizagem!</p>
-        </article>
-    </section>
-    <section id="hab">
-        <h3>Habilidades:</h3>
-        <ul>
-            <li><em>Alta capacidade analítica</em></li>
-            <li>Assertividade</li>
-            <li>Criatividade</li>
-            <li>Resiliência</li>
-            <li>Abstração</li>
-        </ul>
-    </section>
-    <nav>
-        <h4>Blogs que acompanho ⬇</h4>
-        <a href="https://blog.betrybe.com/" target="_blank" rel="noopener noreferrer">Blog da Trybe</a>
-        <a href="https://blog.sesisenai.org.br/" target="_blank" rel="noopener noreferrer">Blog SESI SENAI</a>
-        <a href="https://www.acate.com.br/blog-da-acate/" target="_blank" rel="noopener noreferrer">Blog da ACATE</a>
-        <a href="https://medium.com/@FilipeDeschamps" target="_blank" rel="noopener noreferrer">Filipe Deschamps</a>
-        <a href="https://diolinux.com.br/autor/blogdiolinux" target="_blank" rel="noopener noreferrer">DioLinux</a>
-    </nav>
+    <main>
+        <section id="me">
+            <h1 id="nome">Leticia de Paula</h1>
+            <img src="foto.jpg" alt="Foto atual de Leticia" id="foto">
+            <nav id="indice">
+                <a href="#foto">Foto</a><br>
+                <a href="#sobre">Sobre mim</a><br>
+                <a href="#hab">Habilidades</a><br>
+            </nav>
+        </section>
+        <section id="sobre">
+            <h3>Sobre mim:</h3>
+            <article>
+                <p>Brasileira, morando em <b>Joinville</b>, <em>Santa Catarina</em>. Estudante de <em>Desenvolvimento Web</em> na <strong>Trybe</strong> e <em>Desenvolvimento Full Stack</em> no <strong>Senai</strong>. Apaixonada por tecnologia, desenvolvimento e aprendizagem!</p>
+            </article>
+        </section>
+        <section id="hab">
+            <h3>Habilidades:</h3>
+            <ul>
+                <li><em>Alta capacidade analítica</em></li>
+                <li>Assertividade</li>
+                <li>Criatividade</li>
+                <li>Resiliência</li>
+                <li>Abstração</li>
+            </ul>
+        </section>
+        <nav>
+            <h4>⬇ Blogs que acompanho ⬇</h4>
+            <a href="https://blog.betrybe.com/" target="_blank" rel="noopener noreferrer">Blog da Trybe</a>
+            <a href="https://blog.sesisenai.org.br/" target="_blank" rel="noopener noreferrer">Blog SESI SENAI</a>
+            <a href="https://www.acate.com.br/blog-da-acate/" target="_blank" rel="noopener noreferrer">Blog da ACATE</a>
+            <a href="https://medium.com/@FilipeDeschamps" target="_blank" rel="noopener noreferrer">Filipe Deschamps</a>
+            <a href="https://diolinux.com.br/autor/blogdiolinux" target="_blank" rel="noopener noreferrer">DioLinux</a>
+        </nav>
+    </main>
 </body>
 </html>
