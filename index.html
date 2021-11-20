@@ -7,37 +7,127 @@
     <title>Leticia's Portfolio</title>
     <style>
 
+        * {
+            margin: 0;
+        }
+        
+        body {
+            background-color: rgb(206, 216, 214);
+        }
+        
+        main {
+            margin: 3%;
+            background-color: rgb(222, 222, 222);
+        }
+        
+        nav {
+            background-color: rgb(31, 31, 31);
+            padding: 1%;
+        }
+        
+        article, nav, h3 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        article {
+            padding: 3%;
+            text-align: center;
+        }
+        
+        #me {
+            background-color: rgb(31, 31, 31);
+            padding-bottom: 10%;
+        }
+
+        h3 {
+            background-color: rgb(31, 31, 31);
+            color: white;
+            padding: 1%;
+        }
+
+        h4 {
+            color: white;
+            padding: 1%;
+        }
+
+        a {
+            color: thistle;
+            padding: 1.3%;
+        }
+
+        li {
+            margin: 1%;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #foto {
+            width: 40%;
+            float: left;
+            border-bottom-right-radius: 75%;
+        }
+
+        #nome {
+            display: inline-block;
+            color: white;
+            padding: 10%;
+            font-size: 2em;
+            font-family: monospace;
+        }
+
+        #indice {
+            text-align: right;
+            margin-right: 10%;
+            margin-top: 5%;
+        }
+
+        #orgulho {
+            font-size: 1.2em;
+        }
+
     </style>
 </head>
 <body>
-    <a href="#foto">Foto</a><br>
-    <a href="#sobre">Sobre mim</a><br>
-    <a href="#hab">Habilidades</a><br>
-    <h1>Leticia de Paula</h1>
-    <img src="foto.jpg" width="370" alt="Foto atual de Leticia" id="foto">
-    <section id="sobre">
-        <h3>Sobre mim:</h3>
-        <article>
-            <p>Brasileira, morando em <b>Joinville</b>, <em>Santa Catarina</em>. Estudante de <em>Desenvolvimento Web</em> na <strong>Trybe</strong> e <em>Desenvolvimento Full Stack</em> no <strong>Senai</strong>. Apaixonada por tecnologia, desenvolvimento e aprendizagem!</p>
-        </article>
-    </section>
-    <section id="hab">
-        <h3>Habilidades:</h3>
-        <ul>
-            <li><em>Alta capacidade analítica</em></li>
-            <li>Assertividade</li>
-            <li>Criatividade</li>
-            <li>Resiliência</li>
-            <li>Abstração</li>
-        </ul>
-    </section>
-    <nav>
-        <h4>Blogs que acompanho ⬇</h4>
-        <a href="https://blog.betrybe.com/" target="_blank" rel="noopener noreferrer">Blog da Trybe</a>
-        <a href="https://blog.sesisenai.org.br/" target="_blank" rel="noopener noreferrer">Blog SESI SENAI</a>
-        <a href="https://www.acate.com.br/blog-da-acate/" target="_blank" rel="noopener noreferrer">Blog da ACATE</a>
-        <a href="https://medium.com/@FilipeDeschamps" target="_blank" rel="noopener noreferrer">Filipe Deschamps</a>
-        <a href="https://diolinux.com.br/autor/blogdiolinux" target="_blank" rel="noopener noreferrer">DioLinux</a>
-    </nav>
+    <main>
+        <section id="me">
+            <h1 id="nome">Leticia de Paula</h1>
+            <img src="foto.jpg" alt="Foto atual de Leticia" id="foto">
+            <nav id="indice">
+                <a href="#foto">Foto</a><br>
+                <a href="#sobre">Sobre mim</a><br>
+                <a href="#hab">Habilidades</a><br>
+            </nav>
+        </section>
+        <section id="sobre">
+            <h3>Sobre mim:</h3>
+            <article>
+                <p>Brasileira, morando em <b>Joinville</b>, <em>Santa Catarina</em>. Estudante de <em>Desenvolvimento Web</em> na <strong>Trybe</strong> e <em>Desenvolvimento Full Stack</em> no <strong>Senai</strong>. Apaixonada por tecnologia, desenvolvimento e aprendizagem!</p>
+            </article>
+        </section>
+        <section id="hab">
+            <h3>Habilidades:</h3>
+            <ul>
+                <li class="hab" id="orgulho"><em>Alta capacidade analítica</em></li>
+                <li class="hab">Assertividade</li>
+                <li class="hab">Criatividade</li>
+                <li class="hab">Resiliência</li>
+                <li class="hab">Abstração</li>
+            </ul>
+        </section>
+        <nav>
+            <h4>⬇ Blogs que acompanho ⬇</h4>
+            <a href="https://blog.betrybe.com/" target="_blank" rel="noopener noreferrer">Blog da Trybe</a>
+            <a href="https://blog.sesisenai.org.br/" target="_blank" rel="noopener noreferrer">Blog SESI SENAI</a>
+            <a href="https://www.acate.com.br/blog-da-acate/" target="_blank" rel="noopener noreferrer">Blog da ACATE</a>
+            <a href="https://medium.com/@FilipeDeschamps" target="_blank" rel="noopener noreferrer">Filipe Deschamps</a>
+            <a href="https://diolinux.com.br/autor/blogdiolinux" target="_blank" rel="noopener noreferrer">DioLinux</a>
+        </nav>
+    </main>
 </body>
 </html>
